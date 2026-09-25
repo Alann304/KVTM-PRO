@@ -65,7 +65,7 @@
         body {
             font-family: 'Inter', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
             background-color: var(--bg);
-            background-image: 
+            background-image:
                 radial-gradient(at 0% 0%, rgba(6, 182, 212, 0.12) 0px, transparent 50%),
                 radial-gradient(at 100% 0%, rgba(139, 92, 246, 0.12) 0px, transparent 50%),
                 radial-gradient(at 50% 50%, rgba(15, 22, 42, 0.6) 0px, transparent 100%),
@@ -77,7 +77,11 @@
             -webkit-font-smoothing: antialiased;
         }
 
-        h1, h2, h3, h4, .font-title {
+        h1,
+        h2,
+        h3,
+        h4,
+        .font-title {
             font-family: 'Space Grotesk', sans-serif;
             color: var(--text-heading);
             letter-spacing: -0.02em;
@@ -126,7 +130,9 @@
             font-weight: 800;
         }
 
-        .muted { color: var(--muted); }
+        .muted {
+            color: var(--muted);
+        }
 
         /* Buttons */
         .btn {
@@ -193,6 +199,7 @@
             background: var(--gradient-accent);
             box-shadow: 0 4px 18px rgba(16, 185, 129, 0.35);
         }
+
         .btn.btn-emerald:hover {
             box-shadow: 0 8px 26px rgba(16, 185, 129, 0.5);
         }
@@ -314,6 +321,7 @@
             .nav-links {
                 display: flex;
             }
+
             .nav-toggle {
                 display: none;
             }
@@ -602,8 +610,17 @@
         }
 
         @keyframes pulse {
-            0%, 100% { transform: scale(1); opacity: 1; }
-            50% { transform: scale(1.4); opacity: 0.6; }
+
+            0%,
+            100% {
+                transform: scale(1);
+                opacity: 1;
+            }
+
+            50% {
+                transform: scale(1.4);
+                opacity: 0.6;
+            }
         }
 
         .test-key-banner h3 {
@@ -838,7 +855,9 @@
         }
 
         @media(max-width: 640px) {
-            .grid.cols-3, .grid.cols-2 {
+
+            .grid.cols-3,
+            .grid.cols-2 {
                 grid-template-columns: 1fr;
             }
         }
@@ -1287,7 +1306,8 @@
             margin-bottom: 8px;
         }
 
-        form input, form textarea {
+        form input,
+        form textarea {
             width: 100%;
             background: rgba(0, 0, 0, 0.35);
             border: 1px solid rgba(255, 255, 255, 0.12);
@@ -1300,7 +1320,8 @@
             font-family: inherit;
         }
 
-        form input:focus, form textarea:focus {
+        form input:focus,
+        form textarea:focus {
             border-color: var(--brand1);
             box-shadow: 0 0 15px rgba(6, 182, 212, 0.25);
             background: rgba(0, 0, 0, 0.5);
@@ -1452,13 +1473,16 @@
                     <span class="tag">⚡ Bản cập nhật mới nhất 2026</span>
                     <h1>Điều Khiển Giả Lập <br><span class="brand-grad">KVTM PRO</span> Chuẩn ADB</h1>
                     <p class="hero-desc">
-                        Phần mềm điều khiển giả lập Android qua giao thức ADB chuyên nghiệp. Mô phỏng thao tác chạm/vuốt tự nhiên – Quản lý đa cửa sổ mượt mà, ổn định 24/7.
+                        Phần mềm điều khiển giả lập Android qua giao thức ADB chuyên nghiệp. Mô phỏng thao tác chạm/vuốt
+                        tự nhiên – Quản lý đa cửa sổ mượt mà, ổn định 24/7.
                     </p>
 
                     <div class="hero-ad-warning">
                         <span style="font-size:20px;flex-shrink:0;">🛡️</span>
                         <div>
-                            <strong>An toàn & Hợp chuẩn:</strong> Hoạt động 100% qua Android Debug Bridge chính thức. Chỉ gửi lệnh chạm/vuốt như tay người dùng thực, <strong>không can thiệp, không sửa đổi dữ liệu hay bộ nhớ game</strong>.
+                            <strong>An toàn & Hợp chuẩn:</strong> Hoạt động 100% qua Android Debug Bridge chính thức.
+                            Chỉ gửi lệnh chạm/vuốt như tay người dùng thực, <strong>không can thiệp, không sửa đổi dữ
+                                liệu hay bộ nhớ game</strong>.
                         </div>
                     </div>
 
@@ -1473,16 +1497,17 @@
                         <span class="label">🔑 Key Test Dùng Thử:</span>
                         <span>Key: <code>KVTM_TEST</code></span>
                         <span>Mật khẩu: <code>123456</code></span>
-                        <button class="btn-copy-mini" onclick="copyAllKey('KVTM_TEST', '123456', this)">📋 Chép cả hai</button>
+                        <button class="btn-copy-mini" onclick="copyAllKey('KVTM_TEST', '123456', this)">📋 Chép cả
+                            hai</button>
                     </div>
                 </div>
 
                 <div class="hero-media reveal" style="transition-delay: .15s">
                     <div class="hero-preview">
-                        <iframe width="100%" height="100%"
-                            src="https://www.youtube.com/embed/Kv4lpqJJkKc"
+                        <iframe width="100%" height="100%" src="https://www.youtube.com/embed/Kv4lpqJJkKc"
                             title="KVTM PRO Preview" frameborder="0"
-                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen style="border:0;width:100%;height:100%;">
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                            allowfullscreen style="border:0;width:100%;height:100%;">
                         </iframe>
                     </div>
                 </div>
@@ -1496,7 +1521,8 @@
             <div class="section-head reveal">
                 <span class="tag">Download Center</span>
                 <h2>Tải Về KVTM PRO Mới Nhất</h2>
-                <div class="section-sub">Link tải trực tiếp từ Google Drive chính chủ – Kiểm duyệt sạch sẽ, không mã độc hay virus.</div>
+                <div class="section-sub">Link tải trực tiếp từ Google Drive chính chủ – Kiểm duyệt sạch sẽ, không mã độc
+                    hay virus.</div>
             </div>
 
             <!-- 🔥 PROMINENT TEST KEY BANNER -->
@@ -1505,8 +1531,9 @@
                     <span class="pulse-dot"></span> Miễn phí 100% • Trải nghiệm ngay
                 </div>
                 <h3>🔑 Tài Khoản Dùng Thử Miễn Phí (Key Test)</h3>
-                <p class="sub">Tải phần mềm về, mở lên và đăng nhập ngay với thông tin test bên dưới (không cần chờ kích hoạt):</p>
-                
+                <p class="sub">Tải phần mềm về, mở lên và đăng nhập ngay với thông tin test bên dưới (không cần chờ kích
+                    hoạt):</p>
+
                 <div class="tk-box-grid">
                     <!-- Key Name Box -->
                     <div class="tk-field">
@@ -1537,7 +1564,8 @@
                     </button>
                     <div class="tip">
                         <span>💡</span>
-                        <span>Mẹo: Nhấn nút sao chép, sau đó vào phần mềm KVTM PRO dán vào ô đăng nhập là vào được ngay!</span>
+                        <span>Mẹo: Nhấn nút sao chép, sau đó vào phần mềm KVTM PRO dán vào ô đăng nhập là vào được
+                            ngay!</span>
                     </div>
                 </div>
             </div>
@@ -1553,24 +1581,28 @@
             <div class="section-head reveal">
                 <span class="tag">Tính Năng Vượt Trội</span>
                 <h2>Vì Sao Nên Chọn KVTM PRO?</h2>
-                <div class="section-sub">Phần mềm tối ưu tốc độ phản hồi ADB – Vận hành chuẩn xác, nhẹ máy và siêu bền bỉ.</div>
+                <div class="section-sub">Phần mềm tối ưu tốc độ phản hồi ADB – Vận hành chuẩn xác, nhẹ máy và siêu bền
+                    bỉ.</div>
             </div>
 
             <div class="grid cols-3 reveal">
                 <div class="feat-card">
                     <div class="feat-icon">🛡️</div>
                     <h3>An Toàn Tuyệt Đối</h3>
-                    <p>Ứng dụng công nghệ điều khiển thuần ADB của Google. Mô phỏng đúng cơ chế chạm và vuốt tự nhiên của bàn tay, không đụng chạm tới file hay mã nguồn game.</p>
+                    <p>Ứng dụng công nghệ điều khiển thuần ADB của Google. Mô phỏng đúng cơ chế chạm và vuốt tự nhiên
+                        của bàn tay, không đụng chạm tới file hay mã nguồn game.</p>
                 </div>
                 <div class="feat-card">
                     <div class="feat-icon">⚡</div>
                     <h3>Tối Ưu & Siêu Nhẹ</h3>
-                    <p>Thiết kế không tiêu tốn tài nguyên máy tính. Tùy biến tốc độ gửi lệnh theo độ trễ CPU/RAM, máy văn phòng hay cấu hình yếu đều chạy êm ái.</p>
+                    <p>Thiết kế không tiêu tốn tài nguyên máy tính. Tùy biến tốc độ gửi lệnh theo độ trễ CPU/RAM, máy
+                        văn phòng hay cấu hình yếu đều chạy êm ái.</p>
                 </div>
                 <div class="feat-card">
                     <div class="feat-icon">🔄</div>
                     <h3>Tự Động Hồi Phục 24/7</h3>
-                    <p>Hệ thống tự nhận diện trạng thái đứng hình, crash giả lập hay mất kết nối ADB để tự khởi động lại và tiếp tục công việc một cách thông minh.</p>
+                    <p>Hệ thống tự nhận diện trạng thái đứng hình, crash giả lập hay mất kết nối ADB để tự khởi động lại
+                        và tiếp tục công việc một cách thông minh.</p>
                 </div>
             </div>
 
@@ -1578,24 +1610,37 @@
             <div class="feat-detailed-container reveal" style="margin-top: 36px;">
                 <div class="feat-badge-notice">
                     <span>💡</span>
-                    <span><strong>Ghi chú:</strong> Toàn bộ các tác vụ dưới đây được thực thi tự động qua lệnh tương tác màn hình trên giả lập Android:</span>
+                    <span><strong>Ghi chú:</strong> Toàn bộ các tác vụ dưới đây được thực thi tự động qua lệnh tương tác
+                        màn hình trên giả lập Android:</span>
                 </div>
                 <div class="feature-columns">
                     <div>
-                        <div class="feat-item"><span class="feat-item-check">✓</span><span>Điều khiển đồng thời nhiều cửa sổ giả lập (LDPlayer, Nox, Memu...)</span></div>
-                        <div class="feat-item"><span class="feat-item-check">✓</span><span>Hỗ trợ kịch bản cào cây sự kiện, tự động sản xuất hàng hóa</span></div>
-                        <div class="feat-item"><span class="feat-item-check">✓</span><span>Lập lịch giao đơn hàng tự động, tùy chọn thông minh bỏ qua đơn khó</span></div>
-                        <div class="feat-item"><span class="feat-item-check">✓</span><span>Tự động điều khiển thuê tôm, quản lý đơn hàng chu đáo</span></div>
-                        <div class="feat-item"><span class="feat-item-check">✓</span><span>Hỗ trợ quay hề và mở rương tích lũy định kỳ</span></div>
-                        <div class="feat-item"><span class="feat-item-check">✓</span><span>Tự động nâng cấp kho chứa nguyên liệu khi đủ điều kiện</span></div>
+                        <div class="feat-item"><span class="feat-item-check">✓</span><span>Điều khiển đồng thời nhiều
+                                cửa sổ giả lập (LDPlayer, Nox, Memu...)</span></div>
+                        <div class="feat-item"><span class="feat-item-check">✓</span><span>Hỗ trợ kịch bản cào cây sự
+                                kiện, tự động sản xuất hàng hóa</span></div>
+                        <div class="feat-item"><span class="feat-item-check">✓</span><span>Lập lịch giao đơn hàng tự
+                                động, tùy chọn thông minh bỏ qua đơn khó</span></div>
+                        <div class="feat-item"><span class="feat-item-check">✓</span><span>Tự động điều khiển thuê tôm,
+                                quản lý đơn hàng chu đáo</span></div>
+                        <div class="feat-item"><span class="feat-item-check">✓</span><span>Hỗ trợ quay hề và mở rương
+                                tích lũy định kỳ</span></div>
+                        <div class="feat-item"><span class="feat-item-check">✓</span><span>Tự động nâng cấp kho chứa
+                                nguyên liệu khi đủ điều kiện</span></div>
                     </div>
                     <div>
-                        <div class="feat-item"><span class="feat-item-check">✓</span><span>Điều khiển giao KCC chuẩn xác (Cập nhật phiên bản mới)</span></div>
-                        <div class="feat-item"><span class="feat-item-check">✓</span><span>Chức năng đập chuột mini-game đạt điểm tối đa</span></div>
-                        <div class="feat-item"><span class="feat-item-check">✓</span><span>Mua – Bán vật phẩm nhà bạn bè siêu tốc</span></div>
-                        <div class="feat-item"><span class="feat-item-check">✓</span><span>Lưu lịch sử, báo cáo nhật ký vận hành chi tiết rõ ràng</span></div>
-                        <div class="feat-item"><span class="feat-item-check">✓</span><span>Tự động khởi động lại giả lập khi phát hiện app bị văng</span></div>
-                        <div class="feat-item"><span class="feat-item-check">✓</span><span>Hệ thống bảo mật key trực tuyến, đổi máy linh hoạt</span></div>
+                        <div class="feat-item"><span class="feat-item-check">✓</span><span>Điều khiển giao KCC chuẩn xác
+                                (Cập nhật phiên bản mới)</span></div>
+                        <div class="feat-item"><span class="feat-item-check">✓</span><span>Chức năng đập chuột mini-game
+                                đạt điểm tối đa</span></div>
+                        <div class="feat-item"><span class="feat-item-check">✓</span><span>Mua – Bán vật phẩm nhà bạn bè
+                                siêu tốc</span></div>
+                        <div class="feat-item"><span class="feat-item-check">✓</span><span>Lưu lịch sử, báo cáo nhật ký
+                                vận hành chi tiết rõ ràng</span></div>
+                        <div class="feat-item"><span class="feat-item-check">✓</span><span>Tự động khởi động lại giả lập
+                                khi phát hiện app bị văng</span></div>
+                        <div class="feat-item"><span class="feat-item-check">✓</span><span>Hệ thống bảo mật key trực
+                                tuyến, đổi máy linh hoạt</span></div>
                     </div>
                 </div>
             </div>
@@ -1608,7 +1653,8 @@
             <div class="section-head reveal">
                 <span class="tag">Bảng Giá Hợp Lý</span>
                 <h2>Bảng Giá & Gói Đăng Ký</h2>
-                <div class="section-sub">Đa dạng lựa chọn từ dùng thử miễn phí đến gói trọn đời – Kích hoạt tự động 24/7.</div>
+                <div class="section-sub">Đa dạng lựa chọn từ dùng thử miễn phí đến gói trọn đời – Kích hoạt tự động
+                    24/7.</div>
             </div>
 
             <div class="pricing-grid reveal">
@@ -1617,8 +1663,9 @@
                     <div class="test-badge-pill">MIỄN PHÍ</div>
                     <div class="price-tier-name">Dùng thử</div>
                     <h3>Key Test</h3>
-                    <div class="price green-grad">0đ <span style="font-size:15px;color:var(--muted);font-weight:400">/ mãi mãi</span></div>
-                    
+                    <div class="price green-grad">0đ <span style="font-size:15px;color:var(--muted);font-weight:400">/
+                            mãi mãi</span></div>
+
                     <div class="pricing-test-keys">
                         <div class="ptk-row">
                             <span>Key:</span>
@@ -1637,7 +1684,8 @@
                         <li>Trải nghiệm tính năng cào cơ bản</li>
                         <li>Đăng nhập tức thì không cần duyệt</li>
                     </ul>
-                    <button class="btn outline" onclick="copyAllKey('KVTM_TEST', '123456', this)">⚡ Sao chép Key & Pass</button>
+                    <button class="btn outline" onclick="copyAllKey('KVTM_TEST', '123456', this)">⚡ Sao chép Key &
+                        Pass</button>
                 </div>
 
                 <!-- 1 Day Card -->
@@ -1718,8 +1766,10 @@
                         <div>
                             <div class="price-tier-name" style="color:var(--brand4)">Gói Bổ Sung Độc Quyền</div>
                             <h3 style="margin-bottom:6px">Mở Khóa Full Toàn Bộ Chức Năng (Add-on)</h3>
-                            <p class="muted" style="margin-bottom:12px;font-size:14.5px;">Dành cho các chủ nông trại chuyên nghiệp muốn mở bung 100% tính năng cào và công cụ tự động hóa không giới hạn.</p>
-                            <ul class="price-features" style="margin-bottom:0;display:grid;grid-template-columns:repeat(auto-fit, minmax(240px, 1fr));gap:8px;">
+                            <p class="muted" style="margin-bottom:12px;font-size:14.5px;">Dành cho các chủ nông trại
+                                chuyên nghiệp muốn mở bung 100% tính năng cào và công cụ tự động hóa không giới hạn.</p>
+                            <ul class="price-features"
+                                style="margin-bottom:0;display:grid;grid-template-columns:repeat(auto-fit, minmax(240px, 1fr));gap:8px;">
                                 <li>Mở khóa toàn bộ danh mục chức năng cào</li>
                                 <li>Tự động nhận tính năng mới khi có update</li>
                                 <li>Tặng thêm ngay <strong>+150 Point</strong> vào tài khoản</li>
@@ -1728,7 +1778,8 @@
                         </div>
                         <div style="text-align:right;min-width:240px;">
                             <div class="price" style="margin:0 0 14px;color:var(--brand4);">1.200.000đ</div>
-                            <a class="btn" style="background:var(--brand4);box-shadow:0 4px 18px rgba(236,72,153,0.35);" href="#contact">Liên Hệ Admin Kích Hoạt</a>
+                            <a class="btn" style="background:var(--brand4);box-shadow:0 4px 18px rgba(236,72,153,0.35);"
+                                href="#contact">Liên Hệ Admin Kích Hoạt</a>
                         </div>
                     </div>
                 </div>
@@ -1736,10 +1787,14 @@
 
             <!-- Promotion terms -->
             <div class="card reveal" style="margin-top:24px;border-left:4px solid var(--brand1);">
-                <div style="font-weight:700;font-size:16px;margin-bottom:8px;">🎁 Chính Sách Khuyến Mãi & Thưởng Point:</div>
+                <div style="font-weight:700;font-size:16px;margin-bottom:8px;">🎁 Chính Sách Khuyến Mãi & Thưởng Point:
+                </div>
                 <ul class="doc-list" style="gap:6px;font-size:14.5px;">
-                    <li><strong>Khuyến mãi Nạp Point:</strong> Tặng <strong>+50%</strong> vào mùng 1 hằng tháng; Tặng <strong>+10%</strong> vào mỗi Thứ Hai hàng tuần. (Nếu Thứ Hai trùng mùng 1 sẽ áp dụng mức cao nhất +50%).</li>
-                    <li><strong>Thưởng Giới Thiệu Bạn Bè:</strong> Nhận ngay <strong>+40 Point</strong> khi người được bạn giới thiệu mua gói Key Vĩnh Viễn thành công.</li>
+                    <li><strong>Khuyến mãi Nạp Point:</strong> Tặng <strong>+50%</strong> vào mùng 1 hằng tháng; Tặng
+                        <strong>+10%</strong> vào mỗi Thứ Hai hàng tuần. (Nếu Thứ Hai trùng mùng 1 sẽ áp dụng mức cao
+                        nhất +50%).</li>
+                    <li><strong>Thưởng Giới Thiệu Bạn Bè:</strong> Nhận ngay <strong>+40 Point</strong> khi người được
+                        bạn giới thiệu mua gói Key Vĩnh Viễn thành công.</li>
                 </ul>
             </div>
         </div>
@@ -1751,7 +1806,8 @@
             <div class="section-head reveal">
                 <span class="tag">Hướng Dẫn Sử Dụng</span>
                 <h2>Hướng Dẫn Cài Đặt & Sử Dụng</h2>
-                <div class="section-sub">Xem video từng bước hoặc đọc tài liệu tóm tắt để cấu hình chuẩn nhất trong 2 phút.</div>
+                <div class="section-sub">Xem video từng bước hoặc đọc tài liệu tóm tắt để cấu hình chuẩn nhất trong 2
+                    phút.</div>
             </div>
 
             <div class="grid cols-2">
@@ -1769,14 +1825,21 @@
                         <span>📋</span> Quy Trình Cài Đặt Nhanh
                     </h3>
                     <ol class="doc-list">
-                        <li><strong>Tải file KVTM PRO:</strong> Tải gói mới nhất từ mục <a href="#downloads" style="color:#38bdf8;text-decoration:underline;">Tải về</a> và giải nén ra ổ đĩa D:\ hoặc E:\ (không đặt tên thư mục có dấu tiếng Việt).</li>
-                        <li><strong>Cài đặt môi trường:</strong> Chạy file <code>setup.bat</code> với quyền Admin để cài đặt ADB và các thư viện cần thiết.</li>
-                        <li><strong>Cấu hình Giả Lập Android:</strong> Khuyến nghị dùng LDPlayer 9 hoặc 5. Đặt độ phân giải <code>1000x1000</code>, DPI chuẩn và nhớ <strong>Bật chế độ ADB (Root / Local connection)</strong> trong cài đặt giả lập.</li>
+                        <li><strong>Tải file KVTM PRO:</strong> Tải gói mới nhất từ mục <a href="#downloads"
+                                style="color:#38bdf8;text-decoration:underline;">Tải về</a> và giải nén ra ổ đĩa D:\
+                            hoặc E:\ (không đặt tên thư mục có dấu tiếng Việt).</li>
+                        <li><strong>Cài đặt môi trường:</strong> Chạy file <code>setup.bat</code> với quyền Admin để cài
+                            đặt ADB và các thư viện cần thiết.</li>
+                        <li><strong>Cấu hình Giả Lập Android:</strong> Khuyến nghị dùng LDPlayer 9 hoặc 5. Đặt độ phân
+                            giải <code>1000x1000</code>, DPI chuẩn và nhớ <strong>Bật chế độ ADB (Root / Local
+                                connection)</strong> trong cài đặt giả lập.</li>
                         <li><strong>Mở phần mềm:</strong> Chạy <code>KVTM PRO.exe</code>.
                             <br>• Dùng thử: Nhập Key <code>KVTM_TEST</code>, mật khẩu <code>123456</code>.
                             <br>• Mua mới: Nhấn nút <strong>Đăng Ký</strong> trực tiếp trên tool.
                         </li>
-                        <li><strong>Lưu ý Antivirus:</strong> Do phần mềm giao tiếp với giả lập qua cổng ADB (debug port), nếu Windows Defender cảnh báo thì hãy bấm <strong>Thêm thư mục vào danh sách loại trừ (Exclusion)</strong> để phần mềm chạy ổn định.</li>
+                        <li><strong>Lưu ý Antivirus:</strong> Do phần mềm giao tiếp với giả lập qua cổng ADB (debug
+                            port), nếu Windows Defender cảnh báo thì hãy bấm <strong>Thêm thư mục vào danh sách loại trừ
+                                (Exclusion)</strong> để phần mềm chạy ổn định.</li>
                     </ol>
                 </div>
             </div>
@@ -1797,21 +1860,25 @@
             <div class="section-head reveal">
                 <span class="tag">Tiện Ích Miễn Phí</span>
                 <h2>Công Cụ Hỗ Trợ Nông Trại</h2>
-                <div class="section-sub">Các công cụ tính toán sản xuất giúp tối ưu năng suất và tiết kiệm nguyên liệu.</div>
+                <div class="section-sub">Các công cụ tính toán sản xuất giúp tối ưu năng suất và tiết kiệm nguyên liệu.
+                </div>
             </div>
 
             <div class="grid cols-2">
                 <div class="card reveal">
                     <div style="font-size:32px;margin-bottom:12px;">🌱</div>
                     <h3>Tính Số Cây Cần Sản Xuất</h3>
-                    <p class="muted" style="margin:8px 0 16px;">Nhập số lượng thành phẩm mục tiêu cần đạt, hệ thống sẽ tự động tính toán số cây trồng và thời gian thu hoạch chuẩn nhất.</p>
-                    <a class="btn btn-sm" href="/tinh-nguyen-lieu-kvtm" target="_blank" rel="noopener">🔗 Mở Công Cụ Tính Toán</a>
+                    <p class="muted" style="margin:8px 0 16px;">Nhập số lượng thành phẩm mục tiêu cần đạt, hệ thống sẽ
+                        tự động tính toán số cây trồng và thời gian thu hoạch chuẩn nhất.</p>
+                    <a class="btn btn-sm" href="/tinh-nguyen-lieu-kvtm" target="_blank" rel="noopener">🔗 Mở Công Cụ
+                        Tính Toán</a>
                 </div>
 
                 <div class="card reveal" style="transition-delay: .1s">
                     <div style="font-size:32px;margin-bottom:12px;">📊</div>
                     <h3>Tài Nguyên & Mẹo Nông Trại</h3>
-                    <p class="muted" style="margin:8px 0 16px;">Tổng hợp bảng tra cứu kinh nghiệm nâng chậu, ép đồ và lịch phát sinh sự kiện ingame mới nhất.</p>
+                    <p class="muted" style="margin:8px 0 16px;">Tổng hợp bảng tra cứu kinh nghiệm nâng chậu, ép đồ và
+                        lịch phát sinh sự kiện ingame mới nhất.</p>
                     <a class="btn btn-sm outline" href="#guide">📘 Xem Hướng Dẫn Tối Ưu</a>
                 </div>
             </div>
@@ -1857,7 +1924,8 @@
                     </div>
                 </a>
 
-                <a href="https://www.facebook.com/Alann304/" target="_blank" rel="noopener" class="contact-channel-card">
+                <a href="https://www.facebook.com/Alann304/" target="_blank" rel="noopener"
+                    class="contact-channel-card">
                     <div class="contact-icon" style="background:rgba(139,92,246,0.15);color:#c084fc">👤</div>
                     <div>
                         <div class="muted" style="font-size:13px">Facebook cá nhân</div>
@@ -1884,7 +1952,8 @@
                     </div>
                     <div style="grid-column:1/-1">
                         <label for="msg">Mô tả sự cố hoặc tính năng cần tư vấn</label>
-                        <textarea id="msg" required placeholder="Mô tả cụ thể lỗi gặp phải, phiên bản giả lập đang dùng..."></textarea>
+                        <textarea id="msg" required
+                            placeholder="Mô tả cụ thể lỗi gặp phải, phiên bản giả lập đang dùng..."></textarea>
                     </div>
                     <div style="grid-column:1/-1">
                         <button type="submit" class="btn primary-text">🚀 Gửi Yêu Cầu Hỗ Trợ</button>
@@ -1903,19 +1972,23 @@
                 </h3>
                 <div style="color:var(--muted);line-height:1.8;font-size:14px">
                     <p style="margin-bottom:10px;">
-                        <strong>KVTM PRO</strong> là giải pháp <strong>điều khiển giả lập Android thông qua giao thức ADB (Android Debug Bridge)</strong> – bộ công cụ dòng lệnh tiêu chuẩn được phát triển và cấp phép bởi Google / Android Open Source Project.
+                        <strong>KVTM PRO</strong> là giải pháp <strong>điều khiển giả lập Android thông qua giao thức
+                            ADB (Android Debug Bridge)</strong> – bộ công cụ dòng lệnh tiêu chuẩn được phát triển và cấp
+                        phép bởi Google / Android Open Source Project.
                     </p>
                     <p style="margin-bottom:10px;">
-                        Phần mềm thực hiện gửi các thao tác cảm ứng tự động (tap, swipe, input text) đến màn hình giả lập, <strong>hoàn toàn tương đương với thao tác cơ học của ngón tay người dùng</strong>.
+                        Phần mềm thực hiện gửi các thao tác cảm ứng tự động (tap, swipe, input text) đến màn hình giả
+                        lập, <strong>hoàn toàn tương đương với thao tác cơ học của ngón tay người dùng</strong>.
                     </p>
                     <p style="margin-bottom:8px;"><strong>CAM KẾT CỦA CHÚNG TÔI:</strong></p>
                     <ul class="doc-list" style="margin-left:8px;margin-bottom:10px;gap:4px;">
-                        <li>Tuyệt đối KHÔNG xâm nhập, hack hay giải mã mã nguồn/dữ liệu của bất kỳ trò chơi hay máy chủ nào.</li>
-                        <li>Tuyệt đối KHÔNG can thiệp chỉnh sửa bộ nhớ hệ thống (Memory edit/Cheat Engine) hay bypass bảo mật.</li>
+                        <li>Tuyệt đối KHÔNG xâm nhập, giải mã mã nguồn/dữ liệu của bất kỳ trò chơi hay máy chủ nào.</li>
+                        <li>Tuyệt đối KHÔNG can thiệp chỉnh sửa bộ nhớ hệ thống hay bypass bảo mật.</li>
                         <li>Tuyệt đối KHÔNG thu thập, lưu trữ trái phép thông tin tài khoản cá nhân của người dùng.</li>
                     </ul>
                     <p style="font-size:13px;opacity:0.85;">
-                        Tất cả hành vi điều khiển đều thông qua giao diện ADB mở, minh bạch và an toàn. Người dùng tự chịu trách nhiệm sử dụng theo các quy định và điều khoản của ứng dụng giả lập tương ứng.
+                        Tất cả hành vi điều khiển đều thông qua giao diện ADB mở, minh bạch và an toàn. Người dùng tự
+                        chịu trách nhiệm sử dụng theo các quy định và điều khoản của ứng dụng giả lập tương ứng.
                     </p>
                 </div>
             </div>
@@ -1924,7 +1997,8 @@
 
     <!-- Footer -->
     <footer>
-        <div class="container" style="display:flex;align-items:center;justify-content:space-between;gap:16px;flex-wrap:wrap">
+        <div class="container"
+            style="display:flex;align-items:center;justify-content:space-between;gap:16px;flex-wrap:wrap">
             <div>© <span id="year"></span> <strong>KVTM PRO</strong>. Bản quyền thuộc về đội ngũ phát triển.</div>
             <div style="display:flex;gap:20px;flex-wrap:wrap">
                 <a href="https://t.me/SpiderModxxx" target="_blank" rel="noopener">Telegram</a>
@@ -1975,25 +2049,25 @@
         ];
 
         const FAQS = [
-            { 
-                q: "1. Key dùng thử (Key Test) là gì và có mật khẩu không?", 
-                a: "Để trải nghiệm miễn phí phần mềm trước khi mua, bạn chỉ cần nhập Tên Key: KVTM_TEST và Mật khẩu: 123456 vào giao diện đăng nhập của tool. Key test được mở sẵn các chức năng cào cơ bản để bạn kiểm tra độ tương thích với giả lập." 
+            {
+                q: "1. Key dùng thử (Key Test) là gì và có mật khẩu không?",
+                a: "Để trải nghiệm miễn phí phần mềm trước khi mua, bạn chỉ cần nhập Tên Key: KVTM_TEST và Mật khẩu: 123456 vào giao diện đăng nhập của tool. Key test được mở sẵn các chức năng cào cơ bản để bạn kiểm tra độ tương thích với giả lập."
             },
-            { 
-                q: "2. Tôi cần cấu hình máy tính như thế nào để chạy tốt?", 
-                a: "Cấu hình tối thiểu: CPU từ 2–4 nhân (Core i3/i5 thế hệ 4 trở lên), RAM từ 4GB–8GB, hệ điều hành Windows 10 hoặc 11 (64-bit). Khuyến nghị bật tính năng ảo hóa CPU (Virtualization Technology - VT) trong BIOS máy tính để giả lập chạy mượt mà nhất." 
+            {
+                q: "2. Tôi cần cấu hình máy tính như thế nào để chạy tốt?",
+                a: "Cấu hình tối thiểu: CPU từ 2–4 nhân (Core i3/i5 thế hệ 4 trở lên), RAM từ 4GB–8GB, hệ điều hành Windows 10 hoặc 11 (64-bit). Khuyến nghị bật tính năng ảo hóa CPU (Virtualization Technology - VT) trong BIOS máy tính để giả lập chạy mượt mà nhất."
             },
-            { 
-                q: "3. Tải về mở lên báo lỗi hoặc bị xóa file thì làm sao?", 
-                a: "Hãy giải nén thư mục bằng WinRAR/7-Zip, click chuột phải vào file KVTM PRO.exe chọn 'Run as Administrator'. Nếu phần mềm diệt virus hoặc Windows Defender chặn file do nghi ngờ cổng ADB, bạn vui lòng bấm 'Thêm vào danh sách loại trừ' (Add Exclusion) cho thư mục KVTM PRO." 
+            {
+                q: "3. Tải về mở lên báo lỗi hoặc bị xóa file thì làm sao?",
+                a: "Hãy giải nén thư mục bằng WinRAR/7-Zip, click chuột phải vào file KVTM PRO.exe chọn 'Run as Administrator'. Nếu phần mềm diệt virus hoặc Windows Defender chặn file do nghi ngờ cổng ADB, bạn vui lòng bấm 'Thêm vào danh sách loại trừ' (Add Exclusion) cho thư mục KVTM PRO."
             },
-            { 
-                q: "4. KVTM PRO hoạt động như thế nào, có can thiệp game không?", 
-                a: "Phần mềm gửi các tín hiệu chạm/vuốt màn hình qua giao thức ADB (Android Debug Bridge) tương tự như bạn dùng chuột thao tác trên giả lập. Phần mềm KHÔNG can thiệp mã nguồn, KHÔNG sửa đổi RAM hay dữ liệu game nên đảm bảo an toàn tuyệt đối cho tài khoản." 
+            {
+                q: "4. KVTM PRO hoạt động như thế nào, có can thiệp game không?",
+                a: "Phần mềm gửi các tín hiệu chạm/vuốt màn hình qua giao thức ADB (Android Debug Bridge) tương tự như bạn dùng chuột thao tác trên giả lập. Phần mềm KHÔNG can thiệp mã nguồn, KHÔNG sửa đổi RAM hay dữ liệu game nên đảm bảo an toàn tuyệt đối cho tài khoản."
             },
-            { 
-                q: "5. Tôi mua Key xong có thể đổi sang máy tính khác dùng không?", 
-                a: "Hoàn toàn ĐƯỢC. Hệ thống hỗ trợ chức năng đổi thiết bị (Change Device) trực tiếp trên phần mềm hoặc bạn có thể liên hệ Admin để được hỗ trợ chuyển máy nhanh chóng bất cứ lúc nào." 
+            {
+                q: "5. Tôi mua Key xong có thể đổi sang máy tính khác dùng không?",
+                a: "Hoàn toàn ĐƯỢC. Hệ thống hỗ trợ chức năng đổi thiết bị (Change Device) trực tiếp trên phần mềm hoặc bạn có thể liên hệ Admin để được hỗ trợ chuyển máy nhanh chóng bất cứ lúc nào."
             }
         ];
 
