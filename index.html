@@ -2106,7 +2106,7 @@
                                 <div class="stat-label">Người dùng</div>
                             </div>
                             <div class="stat-box">
-                                <div class="stat-num" style="color:var(--accent-green);"><span class="counter" data-target="49">0</span>/5.0</div>
+                                <div class="stat-num" style="color:var(--accent-green);"><span class="counter" data-target="4.9">0.0</span>/5.0 <span style="font-size:18px;color:#fbbf24;">★</span></div>
                                 <div class="stat-label">Đánh giá 5★</div>
                             </div>
                         </div>
@@ -2274,30 +2274,33 @@
 
         // Animated Counters
         function animateCounter(element) {
-            const target = parseInt(element.getAttribute('data-target'));
-            const duration = 2800;
+            const raw = element.getAttribute('data-target');
+            const isFloat = raw.includes('.');
+            const target = parseFloat(raw);
+            const duration = 2400;
             const increment = target / (duration / 16);
             let current = 0;
 
             const timer = setInterval(() => {
                 current += increment;
                 if (current >= target) {
-                    element.textContent = target.toLocaleString('vi-VN');
+                    element.textContent = isFloat ? target.toFixed(1) : target.toLocaleString('vi-VN');
                     clearInterval(timer);
                 } else {
-                    element.textContent = Math.floor(current).toLocaleString('vi-VN');
+                    element.textContent = isFloat ? current.toFixed(1) : Math.floor(current).toLocaleString('vi-VN');
                 }
             }, 16);
         }
 
         const counterObserver = new IntersectionObserver((entries) => {
             entries.forEach(entry => {
-                if (entry.isIntersecting && entry.target.textContent === '0') {
+                const text = entry.target.textContent.trim();
+                if (entry.isIntersecting && (text === '0' || text === '0.0')) {
                     animateCounter(entry.target);
                     counterObserver.unobserve(entry.target);
                 }
             });
-        }, { threshold: 0.4 });
+        }, { threshold: 0.3 });
 
         document.querySelectorAll('.counter').forEach(counter => {
             counterObserver.observe(counter);
